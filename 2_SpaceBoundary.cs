@@ -1,4 +1,8 @@
-﻿using System;
+/*
+Solves the problem of room area calculation by moving the boundary line 
+from the middle of the curtain grid to the edges of the element based on its thickness. 
+*/
+using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.Linq;
@@ -15,7 +19,7 @@ using Autodesk.Revit.UI.Selection;
 namespace SpaceSeparator2021
 {
     [Transaction(TransactionMode.Manual)]
-    public class Class1 : IExternalCommand
+    public class SpaceBoundary  : IExternalCommand
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
