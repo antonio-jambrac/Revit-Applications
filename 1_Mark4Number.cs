@@ -1,4 +1,10 @@
-﻿using System;
+/*
+Create a custom number which is assigned to all elements with the same parameters, store value in the external CSV file. 
+App always checks if the number already exists so it can apply number in case of same parameter or give it a new one if it does not exists. 
+App can be used on all elements or just on selected elements.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -279,7 +285,7 @@ namespace Mark4
 
             catch (Exception ex)
             {
-                uidoc.Selection.SetElementIds(errorElementId);
+                uidoc.Selection.SetElementIds(errorElementId); // highlight element which are causing app to fail
                 message = ex.Message;
                 return Result.Failed;
             }
