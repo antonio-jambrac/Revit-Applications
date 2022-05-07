@@ -1,4 +1,8 @@
-﻿using System;
+/*
+To avoid tedious steps of creating a custom schedule just to view the area of selected elements, 
+app displays calculated area of all selected elements.
+*/
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
