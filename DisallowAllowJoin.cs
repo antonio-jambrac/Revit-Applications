@@ -1,4 +1,8 @@
-﻿using System;
+/*
+Disallow or allow join on both ends of a wall element. 
+The app can be used on all elements on same or just on the selected element. 
+*/
+using System;
 using System.Collections.Generic;
 using Autodesk.Revit.ApplicationServices;
 using Autodesk.Revit.Attributes;
