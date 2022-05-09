@@ -219,8 +219,8 @@ namespace Mark4
                                         if (!mark4Numbers.Contains(randomNumber) & !csvMarkList.Contains(randomNumber))
                                         {
                                             mark4Numbers.Add(randomNumber);
+                                            control = false;
                                         }
-                                        control = false;
                                     }
                                 }
                             }
@@ -245,8 +245,8 @@ namespace Mark4
                                     if (!mark4Numbers.Contains(randomNumber) & !csvMarkList.Contains(randomNumber))
                                     {
                                         mark4Numbers.Add(randomNumber);
+                                        control = false;
                                     }
-                                    control = false;
                                 }
                             }
                         }
