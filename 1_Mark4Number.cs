@@ -212,14 +212,13 @@ namespace Mark4
                                 }
                                 else
                                 {
-                                    bool control = true;
-                                    while (control)
+                                    while (true)
                                     {
                                         int randomNumber = ran.Next(0, 9999);
                                         if (!mark4Numbers.Contains(randomNumber) & !csvMarkList.Contains(randomNumber))
                                         {
                                             mark4Numbers.Add(randomNumber);
-                                            control = false;
+                                            break;
                                         }
                                     }
                                 }
@@ -238,14 +237,13 @@ namespace Mark4
                             }
                             else
                             {
-                                bool control = true;
-                                while (control)
+                                while (true)
                                 {
                                     int randomNumber = ran.Next(0, 9999);
                                     if (!mark4Numbers.Contains(randomNumber) & !csvMarkList.Contains(randomNumber))
                                     {
                                         mark4Numbers.Add(randomNumber);
-                                        control = false;
+                                        break;
                                     }
                                 }
                             }
